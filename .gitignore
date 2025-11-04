@@ -38,3 +38,60 @@ hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
+
+# === Fabric & Minecraft ===
+# The most important folder to ignore. Contains test worlds, logs, and configs.
+/run/
+
+# Fabric Loom cache
+.caffeine/
+
+# === Gradle (Build System for Fabric) ===
+# Gradle build outputs
+/build/
+/out/
+
+# Gradle cache
+.gradle/
+
+# Ignore the Gradle wrapper binary (similar to your .mvn/wrapper/maven-wrapper.jar)
+gradle/wrapper/gradle-wrapper.jar
+
+# Gradle daemon logs
+.gradle-daemon.log
+.gradle-daemon.out.log
+
+# === IDE - IntelliJ IDEA (Very common for modding) ===
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# === IDE - Eclipse (From your file) ===
+.project
+.classpath
+.settings/
+
+# === IDE - Visual Studio Code ===
+.vscode/
+
+# === Logs & System Files ===
+# Log files
+logs/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# === Maven (Your original entries, in case you use it for other modules) ===
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
