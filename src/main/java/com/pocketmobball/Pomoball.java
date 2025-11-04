@@ -22,7 +22,8 @@ public class Pomoball implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
         ModItems.init();
-        ModEntities.init();
+        // ModEntities.init();
+		ModEntities.registerModEntities();
         System.out.println("PocketMobBall initialized!");
 		LOGGER.info("Hello Fabric world!");
 	}

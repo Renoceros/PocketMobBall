@@ -5,3 +5,19 @@ Item is recognized in game
 Now added textures and pomoball.json
 Switched PomoballItem logic to extend from SnowBall Entity
 basically copying over SnowBall's data/behavior when you throw the pomoball
+👇
+Nevermind it still crashes the game AND still has no texture...
+More tutorials I guess
+
+Looking at the crash report, it says no client renderer
+Ahhhh...
+...
+No Idea what it means
+
+
+ALRIGHT damn
+fixed client,entity,entitIES,and pomoball.java
+so they work ToGeThEr not independently
+
+Now trying to fix the texture issue...
+Alright I give up here today idk why they keep vaseline-ing my beautiful 16x16 image, atp using opencv to draw pixel by pixel and write the png would be easier....

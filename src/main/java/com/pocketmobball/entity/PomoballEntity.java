@@ -4,25 +4,37 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.world.World;
 import com.pocketmobball.registry.ModEntities;
+import com.pocketmobball.registry.ModItems;
 
 public class PomoballEntity extends ThrownItemEntity {
-    public PomoballEntity(EntityType<? extends ThrownItemEntity> type, World world) {
-        super(type, world);
+
+    public PomoballEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+        super(entityType, world);
     }
 
     public PomoballEntity(World world, LivingEntity owner) {
-        super(ModEntities.POMOBALL_ENTITY_TYPE, owner, world);
-    }
-
-    public PomoballEntity(World world, double x, double y, double z) {
-        super(ModEntities.POMOBALL_ENTITY_TYPE, x, y, z, world);
+        super(ModEntities.POMOBALL, owner, world);
     }
 
     @Override
     protected Item getDefaultItem() {
-        return Items.SNOWBALL; // placeholder for now
+        return ModItems.POMOBALL;
+    }
+
+    @Override
+    protected void onEntityHit(EntityHitResult entityHitResult) {
+        super.onEntityHit(entityHitResult);
+        // TODO: capture mob logic
+    }
+
+    @Override
+    protected void onBlockHit(BlockHitResult blockHitResult) {
+        super.onBlockHit(blockHitResult);
+        // TODO: spawn captured mob logic
+        this.discard();
     }
 }
