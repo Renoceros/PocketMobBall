@@ -1,0 +1,7 @@
+No implementation of throw physics
+No texture
+Item is recognized in game
+
+Now added textures and pomoball.json
+Switched PomoballItem logic to extend from SnowBall Entity
+basically copying over SnowBall's data/behavior when you throw the pomoball
