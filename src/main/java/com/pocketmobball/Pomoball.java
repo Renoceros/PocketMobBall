@@ -1,9 +1,12 @@
-package com.pomoball;
+package com.pocketmobball;
 
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.pocketmobball.registry.ModItems;
+import com.pocketmobball.registry.ModEntities;
 
 public class Pomoball implements ModInitializer {
 	public static final String MOD_ID = "pomoball";
@@ -18,7 +21,9 @@ public class Pomoball implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+        ModItems.init();
+        ModEntities.init();
+        System.out.println("PocketMobBall initialized!");
 		LOGGER.info("Hello Fabric world!");
 	}
 }

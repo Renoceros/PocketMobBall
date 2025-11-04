@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.pomoball.mixin.client",
+	"package": "com.pocketmobball.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

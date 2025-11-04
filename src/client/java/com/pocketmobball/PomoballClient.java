@@ -1,4 +1,4 @@
-package com.pomoball;
+package com.pocketmobball;
 
 import net.fabricmc.api.ClientModInitializer;
 

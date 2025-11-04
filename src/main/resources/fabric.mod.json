@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "pomoball",
 	"version": "${version}",
-	"name": "Pomoball",
+	"name": "pomoball",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,10 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.pomoball.Pomoball"
+			"com.pocketmobball.Pomoball"
 		],
 		"client": [
-			"com.pomoball.PomoballClient"
+			"com.pocketmobball.PomoballClient"
+		],
+		"fabric-datagen": [
+			"com.pocketmobball.PomoballDataGenerator"
 		]
 	},
 	"mixins": [
