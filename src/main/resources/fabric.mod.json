@@ -3,9 +3,9 @@
 	"id": "pomoball",
 	"version": "${version}",
 	"name": "pomoball",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Catch all the mobs!",
 	"authors": [
-		"Me!"
+		"Renoceros"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
